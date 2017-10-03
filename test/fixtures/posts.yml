@@ -2,12 +2,12 @@
 
 one:
   title: MyString
-  content: MyString
+  content: MyText
   section: MyString
   photo: MyString
 
 two:
   title: MyString
-  content: MyString
+  content: MyText
   section: MyString
   photo: MyString

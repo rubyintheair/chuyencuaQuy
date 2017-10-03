@@ -1,0 +1,23 @@
+<div class="columns is-centered">
+  <div class="column is-6 ">
+    <div class="card">
+    <div class="card-header">
+      <div class="card-header-title">
+      LOVE
+      </div>
+    </div>
+      <%= form_for Post.new do |f| %>
+        <div class="field">
+          <%= f.text_field :title, placeholder: "Title" %>
+        </div>
+        <div class="field">
+          <%= f.text_area :content, placeholder: "Content" %>
+        </div>
+        <div class="field">
+          <%= select_tag(:section, options_for_select(Post::SECTIONS))%>
+        </div>
+        <%= f.submit "Submit", class: "button is-primary" %>
+      <% end %>
+    </div>
+  </div>
+</div>

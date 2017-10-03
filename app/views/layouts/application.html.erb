@@ -9,6 +9,20 @@
 
   <body>
     <div class="container">
+      <div class="navbar">
+        <div class="navbar-brand">
+          <div class="navbar-item">
+            <%= link_to "Home", root_path %>
+          </div>
+          <div class="navbar-item">
+            <%= link_to "Create Post", posts_new_path %>
+          </div>
+        </div>
+        <div class="navbar-menu">
+          <div class="navbar-start">
+          </div>
+        </div>
+      </div>
       <%= yield %>
     </div>
   </body>
