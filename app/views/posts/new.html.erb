@@ -8,13 +8,19 @@
     </div>
       <%= form_for Post.new do |f| %>
         <div class="field">
-          <%= f.text_field :title, placeholder: "Title" %>
+          <div class="control">
+            <%= f.text_field :title, placeholder: "Title" %>
+          </div>
         </div>
         <div class="field">
           <%= f.text_area :content, placeholder: "Content" %>
         </div>
         <div class="field">
-          <%= select_tag(:section, options_for_select(Post::SECTIONS))%>
+          <div class="control">
+            <span class="select">
+              <%= f.select(:section, Post::SECTIONS.map {|section| section })%>
+            </span>
+          </div>
         </div>
         <%= f.submit "Submit", class: "button is-primary" %>
       <% end %>

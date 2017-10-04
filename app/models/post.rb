@@ -1,5 +1,5 @@
 class Post < ApplicationRecord
-  SECTIONS = ["Health and Beauty", "Programming", "Book", "Eat and drink", "Other"]
+  SECTIONS = ["Health and Beauty", "Programming", "Book", "Eat and Drink", "Other"]
   enum section: SECTIONS
   validates :title, :content, :section, presence: true
 end
